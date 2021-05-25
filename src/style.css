@@ -1,0 +1,52 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px auto;
+  max-width: 700px;
+  background: linear-gradient(#faf3f3, #cfcaf7);
+}
+.containerIntro {
+  color: #4a48a2;
+}
+
+h1.intro {
+  font-weight: 700;
+}
+
+h3.location {
+  text-decoration: solid;
+  font-size: 30px;
+
+}
+
+.card {
+  border: 2px solid #c1a1d3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.city-bar {
+  color: #4a48a2;
+  background: #faf3f3;
+  border: 2px solid #c1a1d3;
+  border-radius: 30px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.search-button {
+
+  background: #7d51e8;
+  color: white;
+  font-size: 12px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+
+  opacity: 0.9;
+  cursor: pointer;
+}
