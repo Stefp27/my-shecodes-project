@@ -28,19 +28,24 @@ dateElement.innerHTML = `${days[day]} ${hours}:${minutes}`;
 
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.main.temp);
   document.querySelector("#hum").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
 }
-function search(event) {
-  event.preventDefault();
+
+function searchCity(city) {
   let apiKey = "ba0f360e4ade3504405f1836416cb716";
-  let city = document.querySelectorAll("city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayWeather);
+  axios.get(apiUrl).then(displayWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#city-input").value;
+  searchCity(city);}
+
+
+
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("submit", handleSubmit);
