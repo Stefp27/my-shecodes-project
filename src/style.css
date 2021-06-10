@@ -1,21 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px auto;
-  max-width: 700px;
+  margin: 100px auto;
+  max-width: 600px;
   background: linear-gradient(#faf3f3, #cfcaf7);
-}
-.containerIntro {
-  color: #4a48a2;
-}
-
-h1.intro {
-  font-weight: 700;
 }
 
 h3.location {
   text-decoration: solid;
   font-size: 30px;
-
 }
 
 .card {
@@ -34,7 +26,6 @@ h3.location {
 }
 
 .search-button {
-
   background: #7d51e8;
   color: white;
   font-size: 12px;
@@ -46,7 +37,6 @@ h3.location {
 }
 
 .search-button:hover {
-
   opacity: 0.9;
   cursor: pointer;
 }
