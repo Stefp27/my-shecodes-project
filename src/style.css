@@ -1,19 +1,24 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 100px auto;
-  max-width: 600px;
   background: linear-gradient(#faf3f3, #cfcaf7);
+}
+
+.app-body {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  background-color:whitesmoke;
+  border: 2px solid #c1a1d3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 h3.location {
   text-decoration: solid;
   font-size: 30px;
-}
-
-.card {
-  border: 2px solid #c1a1d3;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .city-bar {
