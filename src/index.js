@@ -32,7 +32,7 @@ function displayWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp);
   document.querySelector("#hum").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   celsiusTemperature = response.data.main.temp;
 }
