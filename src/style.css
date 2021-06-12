@@ -21,9 +21,50 @@ html, body {
   padding: 20px;
 }
 
-h3.location {
+h1.location {
+  color:#513C71;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 0px;
   text-decoration: solid;
-  font-size: 30px;
+}
+
+#date {
+  color:#513C71;
+  margin-top: 15px;
+}
+
+img {
+  margin-right: 5px;
+  height: 70px;
+  width: 70px;
+}
+
+#temperature {
+  color:#513C71;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#metric {
+  color:#513C71;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 6px;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
+li {
+color: #513C71;
+font-size: 16px;
+font-weight: 400;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .city-bar {

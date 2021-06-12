@@ -21,22 +21,23 @@
             <form class="form-inline" id="search-form">
             <input class="city-bar" type="search" placeholder="Search city" autocomplete="off" id="city-input" />
             <button class="search-button" type="submit">Search</button>
-            <button class="temp-units">˚C</button>
-            <button class="temp-units">˚F</button>
             </form>
 </br>
-            <div class="row align-items-center">
-                <div class="col-4 text-center"> 
-                <h3 class="location" id="city">Bucharest</h3>
-                <h1><span id="temperature">17</span><span id="metric">°C</span></h1>
-                <p class="todayemoji">☁️</p>
+            <div class="row">
+                <div class="col-6"> 
+                <h1 class="location" id="city">Bucharest</h1>
+                <div class="row"> <h6 id="date"></h6> </div>
+</br>
+                <h2> <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" class="float-left" />
+                    <span id="temperature">17</span><span id="metric">°C</span></h2>          
                 </div>
 
-                <div class="col-8">
-                    <div class="row"> <h6 id="date"></h6> </div>
-</br>
-                    <div class="row"> <h6>Humidity:</h6> <span id="hum"></span> </div>
-                    <div class="row"> <h6>Wind:</h6> <span id="wind"></span> </div>
+                <div class="col-6">
+                    <ul>
+                    <li>Precipitation:<span id="hum"> %</span> </li>
+                    <li>Humidity:<span id="hum"> %</span> </li>
+                    <li>Wind:<span id="wind"> km/h</span> </li>
+                    </ul>                
                 </div>
             </div>
         </div>
