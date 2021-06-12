@@ -91,3 +91,11 @@ padding: 0;
   opacity: 0.9;
   cursor: pointer;
 }
+
+footer {
+  line-height: 2;
+  text-align: center;
+}
+.open-source-link {
+  color:#B62A67;
+}
