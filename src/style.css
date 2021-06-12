@@ -37,7 +37,10 @@ h1.location {
 #description {
   color:#513C71;
   margin-top: 1px;
-  text-transform: capitalize;
+}
+
+#description:first-letter {
+  text-transform: uppercase;
 }
 
 img {
