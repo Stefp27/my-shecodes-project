@@ -10,7 +10,7 @@ html, body {
 
 .app-body {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .weather-app {
@@ -34,10 +34,16 @@ h1.location {
   margin-top: 15px;
 }
 
+#description {
+  color:#513C71;
+  margin-top: 1px;
+  text-transform: capitalize;
+}
+
 img {
-  margin-right: 5px;
   height: 70px;
   width: 70px;
+  position:relative;
 }
 
 #temperature {
@@ -49,13 +55,26 @@ img {
 
 #metric {
   color:#513C71;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   display: inline-block;
   line-height: 24px;
   padding-left: 6px;
   vertical-align: top;
   margin-top: 8px;
+}
+
+#celsius-link, #fahrenheit-link {
+  text-decoration: none;
+}
+
+.active {
+  color:#513C71;
+  cursor: default;
+}
+
+.active:hover{
+  text-decoration: none;
 }
 
 li {
@@ -85,6 +104,7 @@ padding: 0;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   transition: all 200ms ease-in-out;
+  margin-left: 10px;
 }
 
 .search-button:hover {
@@ -93,6 +113,7 @@ padding: 0;
 }
 
 footer {
+  font-size: 14px;
   line-height: 2;
   text-align: center;
 }
