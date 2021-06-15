@@ -21,8 +21,28 @@ let days = [
   "Friday",
   "Saturday"
 ];
-
 dateElement.innerHTML = `${days[day]} ${hours}:${minutes}`;
+
+//Forecast elements//
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+  forecastHTML = forecastHTML +
+    `<div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="" width="40"/>
+      <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">28°C</span> | 
+          <span class="weather-forecast-temperature-min">20°C</span>
+      </div>
+    </div>`;
+});
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
 
 //City updates as per the searched city//
 
@@ -66,6 +86,8 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
