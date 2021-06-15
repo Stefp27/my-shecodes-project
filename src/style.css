@@ -43,7 +43,7 @@ h1.location {
   text-transform: uppercase;
 }
 
-img {
+#icon {
   height: 70px;
   width: 70px;
   position:relative;
@@ -122,4 +122,25 @@ footer {
 }
 .open-source-link {
   color:#B62A67;
+}
+
+.weather-forecast {
+  margin-top:20px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 12px;
+  opacity:0.6;
+
+}
+
+.weather-forecast-temperature {
+  font-size:10px;
+  color:black;
+}
+
+.weather-forecast-temperature-min {
+opacity:0.5;
 }
